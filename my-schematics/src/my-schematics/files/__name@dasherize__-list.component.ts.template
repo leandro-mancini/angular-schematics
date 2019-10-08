@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-<%= dasherize(name) %>-list',
+  template: `
+    <p>
+      list works!
+    </p>
+  `,
+  styles: []
+})
+export class <%= classify(name) %>ListComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
