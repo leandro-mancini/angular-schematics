@@ -24,7 +24,7 @@ export function mySchematics(_options: any): Rule {
   return (tree: Tree, context: SchematicContext) => {
     const workspaceConfig = tree.read('/angular.json');
     if (!workspaceConfig) {
-      throw new Error('Could not find Angular workspace configuration');
+      throw new Error('OPSSS! Could not find Angular workspace configuration');
     }
 
     // convert workspace settings to string
